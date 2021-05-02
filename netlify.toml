@@ -1,5 +1,6 @@
 [[redirects]]
   from = "/feed/*"
-  to = “http://vps569005.ovh.net/api/:splat”
+  to = “Request URL: http://vps569005.ovh.net/api/:splat”
   status = 200
   force = true
+
