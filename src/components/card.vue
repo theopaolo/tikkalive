@@ -16,7 +16,7 @@
 import PageProg from '@/components/pages/PageProg.vue'
 import PageArchive from '@/components/pages/PageArchive.vue'
 import PageAbout from '@/components/pages/PageAbout.vue'
-import PagePublication from "@/components/pages/PagePublication.vue"
+import PagePublications from "@/components/pages/PagePublications.vue"
 
 export default {
   name: 'carte',
@@ -24,7 +24,7 @@ export default {
     PageProg,
     PageArchive,
     PageAbout,
-    PagePublication
+    PagePublications
   },
   props: {
     name: String,

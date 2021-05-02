@@ -78,11 +78,19 @@ a:hover {
     font-style: italic;
     cursor: pointer;
   }
-  
+
+  p, h2 {
+    margin-bottom: 1rem;
+  }
+
+.draggable {
+  display: table;
+}
+
 .boxed {
     border-radius: 100pt;
     padding: 1rem;
-    width: fit-content;
+    position: absolute;
     border: 1px solid;
   }
 

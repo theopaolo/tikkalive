@@ -6,7 +6,7 @@
     <navbar @pageName="handleCards"></navbar>
     <liveinfo :zindex="zindex"/>
     <TikkaSocials />
-    
+    <PrismicPubs/>
     <div class="cardsContainer">
       <router-view :key="$route.fullPath"></router-view>
 

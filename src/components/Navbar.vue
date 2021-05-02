@@ -37,7 +37,7 @@ export default {
                 }, 
                 {
                     name: 'Publications',
-                    pageComp: 'PagePublication'
+                    pageComp: 'PagePublications'
                 },
             ]
         }

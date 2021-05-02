@@ -18,8 +18,8 @@ div {
 }
   h1 {
     display: table;
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 4rem;
+    line-height: 4rem;
     font-family: 'Trickster', sans-serif;
   }
   a {

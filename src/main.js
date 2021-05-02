@@ -6,10 +6,23 @@ import VueRouter from "vue-router";
 import VueDraggableResizable from 'vue-draggable-resizable';
 import MarqueeText from 'vue-marquee-text-component';
 
+import PrismicVue from '@prismicio/vue'
+import linkResolver from './link-resolver' // Update this path if necessary
+
+import Publication from './containers/Publication.vue';
+
+const accessToken = '' // Leave empty if your repo is public
+const endpoint = 'https://tikkalive.cdn.prismic.io/api/v2' // Use your repo name
 
 import apolloClient from "./vue-apollo";
 
 Vue.config.productionTip = false;
+
+Vue.use(PrismicVue, {
+  endpoint,
+  apiOptions: { accessToken },
+  linkResolver
+})
 
 Vue.use(VueApollo);
 Vue.use(VueRouter);
@@ -26,8 +39,9 @@ const router = new VueRouter({
   mode: "history",
   routes: [
     {
-      path: "/article/:id",
-      components: require("./containers/Article.vue")
+      path: '/publications/:uid',
+      name: "publication",
+      component: Publication
     }
   ]
 });

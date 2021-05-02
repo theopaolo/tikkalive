@@ -3,7 +3,7 @@
     <div class="card-content" v-for="article in articles" :key="article.id" >
         <router-link :to="{ path: '/article/' + article.id }" :key="article.id" class="articleUrl">   
           <div class="articlerow">
-            <p>Titre: {{article.titre}}</p>
+            <p> {{article.titre}}</p>
           </div>
         </router-link>
     </div>

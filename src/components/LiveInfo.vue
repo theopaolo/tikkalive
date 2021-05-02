@@ -7,14 +7,14 @@
      
       <section class='winbox' v-else >
         <div class='track tracka'>
-          <div class='now nownext'>NOW</div>
+          <div class='now nownext'>now</div>
           <marquee-text :repeat="10">
             {{currentName}}
           </marquee-text>
         </div>
         
         <div class='track trackb'>
-          <div class='next nownext'>NEXT</div>
+          <div class='next nownext'>next</div>
           <marquee-text :repeat="10" :reverse="true">
             {{nextName}}
           </marquee-text>
@@ -39,7 +39,7 @@ export default {
     }
   },
   mounted() {
-    fetch("http://vps569005.ovh.net/api/live-info")
+    fetch("/feed/live-info")
     .then(async response => {
       this.livedata = await response.json();
       
@@ -97,16 +97,16 @@ export default {
   }
 
   .nownext{
-    color: $color2;
+    color: $color3;
     z-index: 999;
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
     position: absolute;
+    background-color: black;
   }
 
   .marquee-text-text{
     text-transform: uppercase;
     padding: 0 8px;
-    &::after{content: "👁‍🗨"};
   }
 </style>
