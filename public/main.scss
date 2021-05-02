@@ -27,6 +27,11 @@ body {
     max-height: 100vh;
     max-width: 100vw;
     overflow: hidden;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("/bg/fondtikkacoco.jpg");
 }
 
 #app{

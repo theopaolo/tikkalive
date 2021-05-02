@@ -1,11 +1,11 @@
 <template>
     <nav>
-        <ul v-for="category in categories" :key="category.id">
+        <!-- <ul v-for="category in categories" :key="category.id">
             <li :class="category.name"
                 :key="category.id">
             {{ category.name }}
             </li>
-        </ul>
+        </ul> -->
     </nav>
 </template>
 <script>

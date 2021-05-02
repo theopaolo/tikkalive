@@ -1,21 +1,13 @@
 <template>
     <div>
       <h1>articles</h1>
-        <div
-            v-if="article.cover"
-            class="banner"
-            :data-src="api_url + article.cover.url"
-        ></div>
+        <div v-if="article.cover" class="banner" :data-src="api_url + article.cover.url"> </div>
            <h1 class="articleTile">{{ article.titre }}</h1>
-          <div>
-              <vue-markdown-it
-              v-if="article.contenu"
-              :source="article.contenu"
-              id="editor"
-              />
-              <p v-if="article.published_at">
+        <div>
+            <vue-markdown-it v-if="article.contenu" source="article.contenu" id="editor" />
+            <p v-if="article.published_at">
               {{ moment(article.published_at).format("MMM Do YY") }}
-              </p>
+            </p>
         </div>
     </div>
 </template>

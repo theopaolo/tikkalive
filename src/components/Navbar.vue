@@ -60,6 +60,7 @@ export default {
 
     .navigation {
         margin: 1rem auto; 
+        background-color: black;
     }
 
 </style>

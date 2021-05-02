@@ -1,4 +1,4 @@
-# vue-app
+# TikkaLive
 
 ## Project setup
 ```

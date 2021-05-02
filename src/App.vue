@@ -5,7 +5,8 @@
     <audioplayer />
     <navbar @pageName="handleCards"></navbar>
     <liveinfo :zindex="zindex"/>
-
+    <TikkaSocials />
+    
     <div class="cardsContainer">
       <router-view :key="$route.fullPath"></router-view>
 
@@ -27,6 +28,7 @@
 import Tikkalogo from '@/components/TikkaLogo.vue'
 import Audioplayer from '@/components/AudioPlay.vue'
 import Liveinfo from '@/components/LiveInfo.vue'
+import TikkaSocials from '@/components/TikkaSocials.vue'
 
 import Navbar from './components/Navbar.vue'
 
@@ -39,7 +41,8 @@ export default {
     Card,
     Audioplayer,
     Liveinfo,
-    Tikkalogo
+    Tikkalogo,
+    TikkaSocials
   },
 
   data: function() {
