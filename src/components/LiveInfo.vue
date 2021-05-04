@@ -39,7 +39,7 @@ export default {
     }
   },
   mounted() {
-    fetch("/feed/live-info")
+    fetch("https://tikkalibre.xyz/api/live-info")
     .then(async response => {
       this.livedata = await response.json();
       

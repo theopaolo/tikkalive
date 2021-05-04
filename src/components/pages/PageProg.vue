@@ -40,7 +40,7 @@ export default {
     }
   },
   mounted () {
-   fetch("http://vps569005.ovh.net/api/week-info")
+   fetch("https://tikkalibre.xyz/api/week-info")
     .then(async response => {
       this.progData = await response.json();
 
