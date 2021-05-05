@@ -35,7 +35,7 @@ export default {
   name: 'Audioplayer',
   data() {
     return {
-      audioSource: "https://objective-hypatia-e06e41.netlify.app/api/_a",
+      audioSource: "feed/_a",
       playing: false,
       volume: 100
     }
